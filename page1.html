@@ -3,8 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Page 1 HTML</title>
+    <script>
+       function openWindow() {
+           window.open("https://www.google.com/")
+       }
+        function printPage() {
+            window.print();
+        }
+
+    </script>
 </head>
 <body>
+
+<input type="button" value="Print Dialog" onclick = "printPage()" />
+<form>
+<input type="button"  value="Open Window" onclick= "openWindow()">
+</form>
+
+
 <!--
     BOM Exercise:
     - Provide a button that when clicked will open up HTML file 2 using the 'window' object

@@ -3,8 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Page 2 HTML</title>
+
+    <h1 id = HeaderTho This the Header></h1>
+
+    <script>
+        function printPage() {
+            window.print();}
+
+
+    </script>
+
+
 </head>
 <body>
+<p id = "doDis"></p>
+<p id = "doTwo"></p>
+<p id="doThree"></p>
+<p id="doFour"></p>
+<p id="doFive"></p>
+<p>This document was last modified <span id="demo"></span>.</p>
+<script>
+
+    document.getElementById("doDis").innerHTML = " Screen width is" +screen.width;
+
+
+    document.getElementById("doTwo").innerHTML = " Screen height is" + screen.height;
+    document.getElementById("doThree").innerHTML = "The title of this document is: " + document.title;
+    document.getElementById("doFour").innerHTML = document.URL
+    document.getElementById("doFive").innerHTML = document.lastModified;
+</script>
+
+
+<input type = "button"  value="Print this page"  onclick = "printPage()" >
+
+
+
+
 <!--
     DOM Exercise:
     - Modify the provided HTML starter file to add a DIV at the top of this page with an ID of 'header'
